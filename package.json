@@ -1,0 +1,46 @@
+{
+  "name": "polyv_vod_upload",
+  "version": "1.0.0",
+  "description": "",
+  "main": "player.js",
+  "directories": {
+    "doc": "doc"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npm run dev",
+    "roll-dev": "rollup -w --environment NODE_ENV:development --config ./config/rollup.config.js",
+    "roll-build": "rollup --environment NODE_ENV:production --config ./config/rollup.config.js",
+    "dev": "npm run roll-dev",
+    "build": "npm run roll-build",
+    "build-zip": "npm run roll-build && node ./build/server.js",
+    "dev-old": "webpack --watch --mode development --config ./build/webpack.dev.config.js",
+    "build-old": "webpack --mode production --config ./build/webpack.prod.config.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@rollup/plugin-json": "^4.1.0",
+    "babel-core": "^6.26.3",
+    "babel-eslint": "^10.0.1",
+    "babel-loader": "^7.1.5",
+    "babel-preset-env": "^1.7.0",
+    "compressing": "^1.5.1",
+    "fs": "0.0.1-security",
+    "jraiser": "^3.1.5",
+    "rollup": "^1.15.2",
+    "rollup-plugin-commonjs": "^9.2.1",
+    "rollup-plugin-eslint": "^5.1.0",
+    "rollup-plugin-node-builtins": "^2.1.2",
+    "rollup-plugin-node-resolve": "^4.0.1",
+    "rollup-plugin-regenerator": "^0.6.0",
+    "rollup-plugin-replace": "^2.1.1",
+    "rollup-plugin-terser": "^4.0.4",
+    "rollup-plugin-uglify": "^6.0.2",
+    "webpack": "^4.16.5",
+    "webpack-cli": "^3.1.0",
+    "webpack-dev-server": "^3.1.5",
+    "webpack-merge": "^4.1.4"
+  },
+  "dependencies": {}
+}

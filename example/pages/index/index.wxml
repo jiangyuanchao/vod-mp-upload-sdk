@@ -1,0 +1,10 @@
+<!--index.wxml-->
+<view class="container">
+  <button class="chooseVideo" bindtap="chooseVideo">chooseVideo</button>
+  <button class="start" bindtap="start">start</button>
+  <button class="pause" bindtap="pause">pause</button>
+  <button class="delete" bindtap="delete">delete</button>
+  <button class="allstart" bindtap="allstart">allstart</button>
+  <button class="allstop" bindtap="allstop">allstop</button>
+  <button class="alldelete" bindtap="alldelete">alldelete</button>
+</view>

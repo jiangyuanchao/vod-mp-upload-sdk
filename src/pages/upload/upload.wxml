@@ -1,0 +1,5 @@
+<view class="container">
+  <button class="chooseVideo" bindtap="chooseVideo">chooseVideo</button>
+  <button class="requestToken" bindtap="requestToken">requestToken</button>
+  <button class="cancel-upload" bindtap="cancel">cancelUpload</button>
+</view>
